@@ -12,19 +12,18 @@ $.ajax ({
         let list =$( `
         <ul>
                         <li>${response.city.name}</li>
-                        <li>${response.city.sunrise}</li>
-                        <li>${response.city.sunset}</li>
+                        <li></li>
                         <li></li>
                         <li></li>
                     </ul>
         
         `)
 
-        let list2 = $('<ul>')
+        let list2 = $('ul')
 
-        let li1 = $('<li>').text(response.city.name)
+        let li1 = $('li').text(response.city.name)
         list2.append(li1)
-        let li2 = $('<li>').text('Temp: 87deg')
+        let li2 = $('li').text('Temp: 87deg')
         list2.append(li2)
 
         $('.weather').append(list2)

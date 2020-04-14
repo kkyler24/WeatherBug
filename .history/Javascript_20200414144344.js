@@ -12,8 +12,7 @@ $.ajax ({
         let list =$( `
         <ul>
                         <li>${response.city.name}</li>
-                        <li>${response.city.sunrise}</li>
-                        <li>${response.city.sunset}</li>
+                        <li></li>
                         <li></li>
                         <li></li>
                     </ul>
